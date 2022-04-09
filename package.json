@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --mode development",
+    "start": "npm install -g serve; serve -s build",
+    "heroku-postbuild":"npm run build"
     "build": "webpack --mode production"
   },
   "keywords": [],
